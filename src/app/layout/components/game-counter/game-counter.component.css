@@ -1,0 +1,29 @@
+.game-counter-container {
+    margin: auto;
+    list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  }
+
+  .item-left{
+    flex: 1;      
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .item-center{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }

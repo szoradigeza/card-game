@@ -1,0 +1,43 @@
+.app-header{
+    width: 100%;
+    height: 7vh;
+    display:flex;
+    background-color: black;
+    flex-direction:row;
+    justify-content:space-between;
+    font-size: min(3vw, 14px);
+    align-items: center;
+    justify-content: center;
+}
+.header-text{
+    color: white;
+}
+
+
+
+.app-header > .left{
+    width:15%;
+    height: 5vh;
+    margin-left: 1vw;
+  }
+  
+.app-header > .right{
+    display:flex;
+    width:100%;
+    align-items: center;
+  justify-content: center;
+  }
+  
+  .app-header > .right > span{
+      color: white;
+  }
+
+  .gamesettings{
+      color: white;
+      padding: 5px;
+  }
+
+  .gamesettings > select{
+      width: 8vw;
+      height: 4vh
+  }

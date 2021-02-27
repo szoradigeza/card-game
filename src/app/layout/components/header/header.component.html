@@ -1,0 +1,15 @@
+
+<div class="app-header">
+    <div class="left">
+        <img src="assets/images/splendex-logo.svg">
+    </div>
+    <div class=right>
+        <span>Deck size:</span>
+        <div class="gamesettings">
+            <select [(ngModel)]="selected">
+                <option *ngFor="let size of deckSize; let i = index" [selected]="size === 3" >{{size}}</option>
+            </select>
+            <button mat-raised-button color="warn" (click)="startNewGame()">START NEW GAME</button>
+        </div>
+    </div>
+</div>
