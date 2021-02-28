@@ -1,6 +1,7 @@
 # SpendexHw
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+[GH page link](https://szoradigeza.github.io/card-game/card-game/)
+
 
 ## Development server
 
