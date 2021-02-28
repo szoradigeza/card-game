@@ -1,3 +1,4 @@
+import { GameService } from './../../../game/game.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,12 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-counter.component.css']
 })
 export class GameCounterComponent implements OnInit {
-  tries: string;
-  best: string;
+  tries: number;
+  best: number = 0;
 
-  constructor() { 
-    this.tries = "1";
-    this.best = "1";
+  constructor(private gameService: GameService ) { 
+    this.gameService.tries$.subscribe(tries => {
+      this.tries = tries;
+    });
+    this.gameService.best$.subscribe(best => {
+      console.log(best);
+      if(this.best < best) {
+        this.best = best;
+      }
+    });
   }
 
   ngOnInit(): void {
