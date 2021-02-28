@@ -32,7 +32,6 @@ export class GameComponent implements OnInit {
     ];
 
     this.makeActiveDeck();
-    //this.activedeck = this.shuffle(this.activedeck);
     this.selectedCards = [];
     this.handleCardChange();
     this.handleNewGame();
@@ -76,7 +75,9 @@ export class GameComponent implements OnInit {
   handleNewGame() {
     this.gameService.newGamedeckSize$.subscribe( deckSize => {
       console.log(deckSize);
-      this.deckSize = deckSize;
+      if(deckSize) {
+        this.deckSize = deckSize;
+      }
       this.activedeck = [];
       this.currentScore = 0;
       this.tries = 0;
@@ -92,6 +93,7 @@ export class GameComponent implements OnInit {
       this.activedeck.push(card1);
       this.activedeck.push(card2);
     }
+    this.activedeck = this.shuffle(this.activedeck);
   }
 
   ngOnInit(): void {

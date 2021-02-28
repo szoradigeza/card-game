@@ -22,6 +22,10 @@ export class GameCounterComponent implements OnInit {
     });
   }
 
+  resetGame() {
+    this.gameService.emitNewGamedeckSize(null);
+  }
+
   ngOnInit(): void {
   }
 
