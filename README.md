@@ -1,6 +1,6 @@
 # SpendexHw
 
-[GH page link](https://szoradigeza.github.io/card-game/card-game/)
+[GH page link](https://szoradigeza.github.io/card-game/)
 
 
 ## Development server
